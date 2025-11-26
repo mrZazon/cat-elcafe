@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,19 +10,30 @@
             padding: 0;
             width: 100%;
             height: 100%;
-            overflow: hidden; /* evita scroll */
+            overflow-x: hidden;
+            overflow-y: auto;
         }
         iframe {
             position: fixed;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
+            width: 100vw;
+            height: 100vh;
             border: none;
         }
     </style>
 </head>
 <body>
     <iframe src="https://elcafe.me"></iframe>
+
+    <!-- Weglot -->
+    <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+    <script>
+        Weglot.initialize({
+            api_key: 'wg_b813f3d74b06d24ebea81190a14f58793',
+            originalLanguage: 'es',
+            destinationLanguages: ['ca']
+        });
+    </script>
 </body>
 </html>
